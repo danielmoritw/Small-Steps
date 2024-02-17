@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F110E6642B76B7BF00BF86A3 /* StepsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110E6632B76B7BE00BF86A3 /* StepsModel.swift */; };
+		F1C2728B2B7D8805005468F4 /* TotalCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728A2B7D8805005468F4 /* TotalCountView.swift */; };
+		F1C2728D2B7E6000005468F4 /* LiveCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728C2B7E6000005468F4 /* LiveCountingView.swift */; };
+		F1C2728F2B813EE6005468F4 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728E2B813EE6005468F4 /* PedometerService.swift */; };
+		F1CE53C02B7516FB00C75E34 /* Small_StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */; };
+		F1CE53C22B7516FB00C75E34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53C12B7516FB00C75E34 /* ContentView.swift */; };
+		F1CE53C42B7516FC00C75E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CE53C32B7516FC00C75E34 /* Assets.xcassets */; };
+		F1CE53C72B7516FC00C75E34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CE53C62B7516FC00C75E34 /* Preview Assets.xcassets */; };
+		F1CE53D12B7516FC00C75E34 /* Small_StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53D02B7516FC00C75E34 /* Small_StepsTests.swift */; };
+		F1CE53DB2B7516FC00C75E34 /* Small_StepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53DA2B7516FC00C75E34 /* Small_StepsUITests.swift */; };
+		F1CE53DD2B7516FC00C75E34 /* Small_StepsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53DC2B7516FC00C75E34 /* Small_StepsUITestsLaunchTests.swift */; };
+		F1CE53EA2B75171C00C75E34 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53E92B75171B00C75E34 /* HealthStore.swift */; };
+		F1CE53EF2B7535CD00C75E34 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53EE2B7535CD00C75E34 /* Step.swift */; };
+		F1CE53F22B75380800C75E34 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53F12B75380800C75E34 /* GraphView.swift */; };
+		F1CE53F52B75402800C75E34 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53F42B75402800C75E34 /* DateExtensions.swift */; };
+		F1CE53F72B7563EA00C75E34 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53F62B7563EA00C75E34 /* CircleProgressView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1CE53CD2B7516FC00C75E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CE53B42B7516FB00C75E34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CE53BB2B7516FB00C75E34;
+			remoteInfo = "Small Steps";
+		};
+		F1CE53D72B7516FC00C75E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CE53B42B7516FB00C75E34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CE53BB2B7516FB00C75E34;
+			remoteInfo = "Small Steps";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F110E6632B76B7BE00BF86A3 /* StepsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsModel.swift; sourceTree = "<group>"; };
+		F1C2728A2B7D8805005468F4 /* TotalCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCountView.swift; sourceTree = "<group>"; };
+		F1C2728C2B7E6000005468F4 /* LiveCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCountingView.swift; sourceTree = "<group>"; };
+		F1C2728E2B813EE6005468F4 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
+		F1CE53BC2B7516FB00C75E34 /* Small Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Small Steps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_StepsApp.swift; sourceTree = "<group>"; };
+		F1CE53C12B7516FB00C75E34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1CE53C32B7516FC00C75E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1CE53C62B7516FC00C75E34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1CE53CC2B7516FC00C75E34 /* Small StepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Small StepsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CE53D02B7516FC00C75E34 /* Small_StepsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_StepsTests.swift; sourceTree = "<group>"; };
+		F1CE53D62B7516FC00C75E34 /* Small StepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Small StepsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CE53DA2B7516FC00C75E34 /* Small_StepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_StepsUITests.swift; sourceTree = "<group>"; };
+		F1CE53DC2B7516FC00C75E34 /* Small_StepsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_StepsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1CE53E92B75171B00C75E34 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		F1CE53EB2B7517EB00C75E34 /* Small-Steps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Small-Steps-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F1CE53EC2B75197600C75E34 /* Small Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Small Steps.entitlements"; sourceTree = "<group>"; };
+		F1CE53EE2B7535CD00C75E34 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		F1CE53F12B75380800C75E34 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		F1CE53F42B75402800C75E34 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		F1CE53F62B7563EA00C75E34 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1CE53B92B7516FB00C75E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53C92B7516FC00C75E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53D32B7516FC00C75E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1CE53B32B7516FB00C75E34 = {
+			isa = PBXGroup;
+			children = (
+				F1CE53BE2B7516FB00C75E34 /* Small Steps */,
+				F1CE53CF2B7516FC00C75E34 /* Small StepsTests */,
+				F1CE53D92B7516FC00C75E34 /* Small StepsUITests */,
+				F1CE53BD2B7516FB00C75E34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1CE53BD2B7516FB00C75E34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53BC2B7516FB00C75E34 /* Small Steps.app */,
+				F1CE53CC2B7516FC00C75E34 /* Small StepsTests.xctest */,
+				F1CE53D62B7516FC00C75E34 /* Small StepsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1CE53BE2B7516FB00C75E34 /* Small Steps */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53F32B75401D00C75E34 /* Extensions */,
+				F1CE53F02B7537FD00C75E34 /* Views */,
+				F1CE53ED2B75358000C75E34 /* Models */,
+				F1CE53EC2B75197600C75E34 /* Small Steps.entitlements */,
+				F1CE53EB2B7517EB00C75E34 /* Small-Steps-Info.plist */,
+				F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */,
+				F1CE53C12B7516FB00C75E34 /* ContentView.swift */,
+				F1CE53E92B75171B00C75E34 /* HealthStore.swift */,
+				F110E6632B76B7BE00BF86A3 /* StepsModel.swift */,
+				F1CE53C32B7516FC00C75E34 /* Assets.xcassets */,
+				F1CE53C52B7516FC00C75E34 /* Preview Content */,
+				F1C2728E2B813EE6005468F4 /* PedometerService.swift */,
+			);
+			path = "Small Steps";
+			sourceTree = "<group>";
+		};
+		F1CE53C52B7516FC00C75E34 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53C62B7516FC00C75E34 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1CE53CF2B7516FC00C75E34 /* Small StepsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53D02B7516FC00C75E34 /* Small_StepsTests.swift */,
+			);
+			path = "Small StepsTests";
+			sourceTree = "<group>";
+		};
+		F1CE53D92B7516FC00C75E34 /* Small StepsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53DA2B7516FC00C75E34 /* Small_StepsUITests.swift */,
+				F1CE53DC2B7516FC00C75E34 /* Small_StepsUITestsLaunchTests.swift */,
+			);
+			path = "Small StepsUITests";
+			sourceTree = "<group>";
+		};
+		F1CE53ED2B75358000C75E34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53EE2B7535CD00C75E34 /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1CE53F02B7537FD00C75E34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53F12B75380800C75E34 /* GraphView.swift */,
+				F1CE53F62B7563EA00C75E34 /* CircleProgressView.swift */,
+				F1C2728A2B7D8805005468F4 /* TotalCountView.swift */,
+				F1C2728C2B7E6000005468F4 /* LiveCountingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1CE53F32B75401D00C75E34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE53F42B75402800C75E34 /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1CE53BB2B7516FB00C75E34 /* Small Steps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CE53E02B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small Steps" */;
+			buildPhases = (
+				F1CE53B82B7516FB00C75E34 /* Sources */,
+				F1CE53B92B7516FB00C75E34 /* Frameworks */,
+				F1CE53BA2B7516FB00C75E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Small Steps";
+			productName = "Small Steps";
+			productReference = F1CE53BC2B7516FB00C75E34 /* Small Steps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1CE53CB2B7516FC00C75E34 /* Small StepsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CE53E32B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small StepsTests" */;
+			buildPhases = (
+				F1CE53C82B7516FC00C75E34 /* Sources */,
+				F1CE53C92B7516FC00C75E34 /* Frameworks */,
+				F1CE53CA2B7516FC00C75E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CE53CE2B7516FC00C75E34 /* PBXTargetDependency */,
+			);
+			name = "Small StepsTests";
+			productName = "Small StepsTests";
+			productReference = F1CE53CC2B7516FC00C75E34 /* Small StepsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1CE53D52B7516FC00C75E34 /* Small StepsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CE53E62B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small StepsUITests" */;
+			buildPhases = (
+				F1CE53D22B7516FC00C75E34 /* Sources */,
+				F1CE53D32B7516FC00C75E34 /* Frameworks */,
+				F1CE53D42B7516FC00C75E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CE53D82B7516FC00C75E34 /* PBXTargetDependency */,
+			);
+			name = "Small StepsUITests";
+			productName = "Small StepsUITests";
+			productReference = F1CE53D62B7516FC00C75E34 /* Small StepsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1CE53B42B7516FB00C75E34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F1CE53BB2B7516FB00C75E34 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F1CE53CB2B7516FC00C75E34 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F1CE53BB2B7516FB00C75E34;
+					};
+					F1CE53D52B7516FC00C75E34 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F1CE53BB2B7516FB00C75E34;
+					};
+				};
+			};
+			buildConfigurationList = F1CE53B72B7516FB00C75E34 /* Build configuration list for PBXProject "Small Steps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1CE53B32B7516FB00C75E34;
+			productRefGroup = F1CE53BD2B7516FB00C75E34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1CE53BB2B7516FB00C75E34 /* Small Steps */,
+				F1CE53CB2B7516FC00C75E34 /* Small StepsTests */,
+				F1CE53D52B7516FC00C75E34 /* Small StepsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1CE53BA2B7516FB00C75E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CE53C72B7516FC00C75E34 /* Preview Assets.xcassets in Resources */,
+				F1CE53C42B7516FC00C75E34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53CA2B7516FC00C75E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53D42B7516FC00C75E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1CE53B82B7516FB00C75E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CE53F22B75380800C75E34 /* GraphView.swift in Sources */,
+				F1CE53C22B7516FB00C75E34 /* ContentView.swift in Sources */,
+				F1CE53EF2B7535CD00C75E34 /* Step.swift in Sources */,
+				F110E6642B76B7BF00BF86A3 /* StepsModel.swift in Sources */,
+				F1CE53F72B7563EA00C75E34 /* CircleProgressView.swift in Sources */,
+				F1CE53EA2B75171C00C75E34 /* HealthStore.swift in Sources */,
+				F1CE53C02B7516FB00C75E34 /* Small_StepsApp.swift in Sources */,
+				F1CE53F52B75402800C75E34 /* DateExtensions.swift in Sources */,
+				F1C2728B2B7D8805005468F4 /* TotalCountView.swift in Sources */,
+				F1C2728D2B7E6000005468F4 /* LiveCountingView.swift in Sources */,
+				F1C2728F2B813EE6005468F4 /* PedometerService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53C82B7516FC00C75E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CE53D12B7516FC00C75E34 /* Small_StepsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CE53D22B7516FC00C75E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CE53DD2B7516FC00C75E34 /* Small_StepsUITestsLaunchTests.swift in Sources */,
+				F1CE53DB2B7516FC00C75E34 /* Small_StepsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1CE53CE2B7516FC00C75E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CE53BB2B7516FB00C75E34 /* Small Steps */;
+			targetProxy = F1CE53CD2B7516FC00C75E34 /* PBXContainerItemProxy */;
+		};
+		F1CE53D82B7516FC00C75E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CE53BB2B7516FB00C75E34 /* Small Steps */;
+			targetProxy = F1CE53D72B7516FC00C75E34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1CE53DE2B7516FC00C75E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1CE53DF2B7516FC00C75E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1CE53E12B7516FC00C75E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Small Steps/Small Steps.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Small Steps/Preview Content\"";
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Small-Steps-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires to access your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires to access your health data";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion sensors in order to calculate your live step count";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-Steps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1CE53E22B7516FC00C75E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Small Steps/Small Steps.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Small Steps/Preview Content\"";
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Small-Steps-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires to access your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires to access your health data";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion sensors in order to calculate your live step count";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-Steps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1CE53E42B7516FC00C75E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-StepsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Small Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Small Steps";
+			};
+			name = Debug;
+		};
+		F1CE53E52B7516FC00C75E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-StepsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Small Steps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Small Steps";
+			};
+			name = Release;
+		};
+		F1CE53E72B7516FC00C75E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-StepsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Small Steps";
+			};
+			name = Debug;
+		};
+		F1CE53E82B7516FC00C75E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP84YCCZ8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielmori.Small-StepsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Small Steps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1CE53B72B7516FB00C75E34 /* Build configuration list for PBXProject "Small Steps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE53DE2B7516FC00C75E34 /* Debug */,
+				F1CE53DF2B7516FC00C75E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CE53E02B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small Steps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE53E12B7516FC00C75E34 /* Debug */,
+				F1CE53E22B7516FC00C75E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CE53E32B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small StepsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE53E42B7516FC00C75E34 /* Debug */,
+				F1CE53E52B7516FC00C75E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CE53E62B7516FC00C75E34 /* Build configuration list for PBXNativeTarget "Small StepsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE53E72B7516FC00C75E34 /* Debug */,
+				F1CE53E82B7516FC00C75E34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1CE53B42B7516FB00C75E34 /* Project object */;
+}
