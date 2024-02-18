@@ -60,5 +60,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(StepsModel())
+        .environmentObject(StepsModel(healthStore: HealthStore()))
 }

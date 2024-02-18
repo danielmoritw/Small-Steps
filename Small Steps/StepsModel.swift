@@ -13,13 +13,13 @@ import CoreMotion
 class StepsModel: ObservableObject {
     @Published var steps: [Step] = []
     @Published var todaySteps: Int = 0
-    private var healthStore: HealthStore?
+    private var healthStore: HealthStoreProtocol?
     private var pedometer: CMPedometer?
     @Published var liveSteps: Int = 0
     @Published var isPedometerActive: Bool = false
     
-    init() {
-        healthStore = HealthStore()
+    init(healthStore: HealthStoreProtocol) {
+        self.healthStore = healthStore
         pedometer = CMPedometer()
     }
     

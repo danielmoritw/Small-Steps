@@ -11,6 +11,7 @@
 		F1C2728B2B7D8805005468F4 /* TotalCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728A2B7D8805005468F4 /* TotalCountView.swift */; };
 		F1C2728D2B7E6000005468F4 /* LiveCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728C2B7E6000005468F4 /* LiveCountingView.swift */; };
 		F1C2728F2B813EE6005468F4 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C2728E2B813EE6005468F4 /* PedometerService.swift */; };
+		F1C272912B814B54005468F4 /* HealthStoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C272902B814B54005468F4 /* HealthStoreMock.swift */; };
 		F1CE53C02B7516FB00C75E34 /* Small_StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */; };
 		F1CE53C22B7516FB00C75E34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE53C12B7516FB00C75E34 /* ContentView.swift */; };
 		F1CE53C42B7516FC00C75E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CE53C32B7516FC00C75E34 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		F1C2728A2B7D8805005468F4 /* TotalCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCountView.swift; sourceTree = "<group>"; };
 		F1C2728C2B7E6000005468F4 /* LiveCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCountingView.swift; sourceTree = "<group>"; };
 		F1C2728E2B813EE6005468F4 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
+		F1C272902B814B54005468F4 /* HealthStoreMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreMock.swift; sourceTree = "<group>"; };
 		F1CE53BC2B7516FB00C75E34 /* Small Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Small Steps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_StepsApp.swift; sourceTree = "<group>"; };
 		F1CE53C12B7516FB00C75E34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,11 +123,11 @@
 				F1CE53EB2B7517EB00C75E34 /* Small-Steps-Info.plist */,
 				F1CE53BF2B7516FB00C75E34 /* Small_StepsApp.swift */,
 				F1CE53C12B7516FB00C75E34 /* ContentView.swift */,
-				F1CE53E92B75171B00C75E34 /* HealthStore.swift */,
 				F110E6632B76B7BE00BF86A3 /* StepsModel.swift */,
+				F1CE53E92B75171B00C75E34 /* HealthStore.swift */,
+				F1C2728E2B813EE6005468F4 /* PedometerService.swift */,
 				F1CE53C32B7516FC00C75E34 /* Assets.xcassets */,
 				F1CE53C52B7516FC00C75E34 /* Preview Content */,
-				F1C2728E2B813EE6005468F4 /* PedometerService.swift */,
 			);
 			path = "Small Steps";
 			sourceTree = "<group>";
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F1CE53D02B7516FC00C75E34 /* Small_StepsTests.swift */,
+				F1C272902B814B54005468F4 /* HealthStoreMock.swift */,
 			);
 			path = "Small StepsTests";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CE53D12B7516FC00C75E34 /* Small_StepsTests.swift in Sources */,
+				F1C272912B814B54005468F4 /* HealthStoreMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

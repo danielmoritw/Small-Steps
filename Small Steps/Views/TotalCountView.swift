@@ -12,7 +12,7 @@ struct TotalCountView: View {
     var steps: [Step]
     
     var body: some View {
-
+        
         VStack {
             Text("Today's steps")
                 .font(.title)
@@ -21,13 +21,19 @@ struct TotalCountView: View {
                 CircleProgressView(progress: Double(todaySteps/10000))
                 Text("\(todaySteps)")
                     .foregroundStyle(.white)
-                    .font(.system(size: 42))
+                    .font(.system(size: 32))
                     .fontWeight(.bold)
             }.padding([.top], 20)
-        }
+        }.padding([.bottom], 40)
+        
         Spacer()
+        
         GraphView(steps: steps)
             .foregroundColor(.white)
+            .padding()
+            .background(.white.opacity(0.1))
+            .clipShape(RoundedRectangle(cornerRadius: 25))
+            
     }
 }
 

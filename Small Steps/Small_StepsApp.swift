@@ -12,7 +12,7 @@ struct Small_StepsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(StepsModel())
+                .environmentObject(StepsModel(healthStore: HealthStore()))
         }
     }
 }
